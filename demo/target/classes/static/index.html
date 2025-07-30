@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Bree+Serif&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pirata+One&family=Protest+Guerrilla&family=Roboto+Slab:wght@100..900&family=Sacramento&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- bootstrap iicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="icon" href="https://img.freepik.com/free-vector/students-waiting-school-bus_1308-132700.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740">
+    <title>school management system</title>
+</head>
+
+<body>
+    <section class="header ">
+        <header class="kanit-medium inside-header "> <a href="" class="htc"> <i class="bi bi-rocket-takeoff-fill"></i>
+                Apply Now</a>
+            |<a href="" class="htc"> <i class="bi bi-bell-fill"></i> Admission Open for Session 2025-26</a>
+            |<a href="" class="htc"><i class="bi bi-chat-square-text-fill"></i> Enquire Now </i></a> |
+            <div class="media-icon">
+                <a href="" class="htc"><i class="bi bi-facebook"></i></a>|
+                <a href="" class="htc"><i class="bi bi-youtube"></i></a>|
+                <a href="" class="htc"><i class="bi bi-instagram"></i></a>|
+                <a href="" class="htc"><i class="bi bi-twitter-x"></i></a>|
+            </div>
+        </header>
+    </section>
+
+
+
+    <nav class="Navbar ">
+        <a href="/j"><img
+                src="https://fbit.in/wp-content/uploads/2024/10/cropped-futurebyte-Logo-e1728980012624.png" width="50px"
+                height="50px" alt=""></a>
+        <!-- toogle bar-->
+        <div class="dropdown toogle-button "><span class="dropdown-summary bgb" id="nav-toogle" onclick="toogle()"><i
+                    class="bi bi-list "></i></span> </div>
+        <!-- desktop view-->
+        <ul class="nav-desktop-links">
+            <a href="" class="kanit-semibold home-bar dropdown "> <span class="dropdown-summary tc">Home</span></a>
+            <!-- drop 1 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc"> About us</summary>
+                <div class="dropdown-item bdl">
+                    <a href="" class=" hbgl bdl kanit-medium">Our School</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Our Mission</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Administration</a>
+                    <a href="" class="hbgl bdl   kanit-medium">Education Policy</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Principal's Message</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Vice Principal's Message</a>
+
+                </div>
+            </div>
+
+            <!-- drop 2 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc"> Academics</summary>
+                <div class="dropdown-item bdl">
+                    <a href="" class="hbgl bdl  kanit-medium"> Academic Overview</a>
+                    <a href="" class="hbgl bdl  kanit-medium">CO-CURRICULAR ACTIVITIES</a>
+                    <a href="" class="hbgl bdl   kanit-medium">CO-SCHOLASTIC ACTIVITIES</a>
+                    <a href="" class="hbgl bdl  kanit-medium">ADMISSION GUIDELINES</a>
+                    <a href="" class="hbgl bdl  kanit-medium">SCHOOL FEES</a>
+
+                </div>
+            </div>
+            <!-- drop 3 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc"> Facilities</summary>
+            </div>
+
+            <!-- drop 4 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc"> Student Life</summary>
+            </div>
+
+            <!-- drop 5 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc"> Gallery</summary>
+                <div class="dropdown-item bdl">
+                    <a href="" class="hbgl bdl  kanit-medium">Gallery 2024-25</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Gallery 2023-24</a>
+                    <a href="" class="hbgl bdl   kanit-medium">Gallery 2023-22</a>
+                    <a href="" class="hbgl bdl  kanit-medium">Gallery 2021-22</a>
+                </div>
+            </div>
+
+            <!-- drop 6 -->
+            <div class="dropdown">
+                <summary class="kanit-semibold  dropdown-summary tc "> Contact us</summary>
+            </div>
+            <div class="dropdown">
+                <div class="kanit-semibold  dropdown-summary-b tc bgb  hbgbd"> Student Login</div>
+            </div>
+            <div class="dropdown">
+                <div class="kanit-semibold  dropdown-summary-b tc bgb hbgbd "> Admin Login</div>
+            </div>
+        </ul>
+        <!-- mobile view-->
+        <div class="nav-mobile-links " id="nml">
+            <div class="toogle-close">
+                <a onclick="toogleclose()"><i class="bi bi-x-square-fill"></i></a>
+            </div>
+            <a href="" class="kanit-semibold m-home-bar m-dropdown bdl"> <span
+                    class="m-dropdown-summary tc">Home</span></a>
+            <!-- drop 1 -->
+            <details class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc"> About us</summary>
+                <div class="m-dropdown-item ">
+                    <a href="" class=" hbgl  kanit-medium">Our School</a>
+                    <a href="" class="hbgl  kanit-medium">Our Mission</a>
+                    <a href="" class="hbgl  kanit-medium">Administration</a>
+                    <a href="" class="hbgl    kanit-medium">Education Policy</a>
+                    <a href="" class="hbgl   kanit-medium">Principal's Message</a>
+                    <a href="" class="hbgl   kanit-medium">Vice Principal's Message</a>
+
+                </div>
+            </details>
+
+
+            <!-- drop 2 -->
+            <details class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc "> Academics</summary>
+                <div class="m-dropdown-item ">
+                    <a href="" class="hbgl   kanit-medium"> Academic Overview</a>
+                    <a href="" class="hbgl   kanit-medium">CO-CURRICULAR ACTIVITIES</a>
+                    <a href="" class="hbgl    kanit-medium">CO-SCHOLASTIC ACTIVITIES</a>
+                    <a href="" class="hbgl   kanit-medium">ADMISSION GUIDELINES</a>
+                    <a href="" class="hbgl   kanit-medium">SCHOOL FEES</a>
+
+                </div>
+
+            </details>
+            <!-- drop 3 -->
+            <div class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc"> Facilities</summary>
+            </div>
+
+            <!-- drop 4 -->
+            <div class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc"> Student Life</summary>
+            </div>
+
+            <!-- drop 5 -->
+            <details class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc"> Gallery</summary>
+                <div class="m-dropdown-item ">
+                    <a href="" class="hbgl   kanit-medium">Gallery 2024-25</a>
+                    <a href="" class="hbgl   kanit-medium">Gallery 2023-24</a>
+                    <a href="" class="hbgl    kanit-medium">Gallery 2023-22</a>
+                    <a href="" class="hbgl   kanit-medium">Gallery 2021-22</a>
+                </div>
+            </details>
+
+            <!-- drop 6 -->
+            <div class="m-dropdown bdl">
+                <summary class="kanit-semibold  m-dropdown-summary tc "> Contact us</summary>
+            </div>
+            <div class="m-dropdown bdl">
+                <div class="kanit-semibold  m-dropdown-summary-b bhbg tc bgb "> Student Login</div>
+            </div>
+            <div class="m-dropdown bdl">
+                <div class="kanit-semibold  m-dropdown-summary-b bhbg tc bgb "> Admin Login</div>
+            </div>
+        </div>
+
+
+
+
+
+    </nav>
+
+
+
+
+
+    <!-- making an slider  -->
+
+    <section class="hero-section ">
+        <img src="https://img.freepik.com/free-vector/students-walking-front-university-flat-vector-illustration-young-people-spending-time-campus-near-college-building-summer-day-relaxing-talking-landscape-leisure-concept_74855-25308.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+            class=" hero-section-img" alt="slide show" width="90%" height="100%">
+    </section>
+
+
+    <!-- making text moving means marquee -->
+    <section class="moving-news-section bg2">
+        <div class="moving-news-section-latest-news kanit-bold bg1 tc1">Latest News</div>
+        <!-- marquee tag -->
+        <marquee behavior="scroll " direction="left" scrollamount="3" class="moving-news-section-latest-news-content">
+        </marquee>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---java try out spring boot working or not-->
+<form action="s2" method="post">
+    <input type="text" name="n" value="John">
+    <input type="text" name="n1" value="Johnf">
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- making intro about School -->
+    <section class="  intro-section">
+        <div class=" intro-section-intro">
+            <h1 class="kanit-extrabold tc1 mg">Welcome to Our School</h1>
+            <p class="kanit-light mg ">Christ School CBSE, is the newest branch of Christ Group of Schools, Bangalore,
+                which was begun in June 2017, and now in the current academic year has classes up to Grade X, with 2100
+                students.
+            <ul class="intro-section-intro-p-li">
+                <li class="kanit-light mg">A CMI brand</li>
+                <li class="kanit-light mg">Prepares future leaders</li>
+                <li class="kanit-lightmg mg ">Moral and spiritual compass</li>
+                <li class="kanit-light mg">Activity based learning</li>
+            </ul>
+            </p>
+            <a href="#" class="tc kanit-light mg">learn more about .........</a>
+        </div>
+        <div class=" intro-section-vedio-intro">
+
+            <img src="https://img.freepik.com/free-vector/school-building-scene-with-word-school-time_1308-42331.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                alt="img" width="100%;">
+            <!-- <iframe  
+            class="youtube-vedio"
+            width="100%"
+             height="315"
+              src="https://www.youtube-nocookie.com/embed/L6I8Zb_SigA?si=M2vesqwokf1-r9sN" 
+              title="YouTube video player"
+               frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe> -->
+
+        </div>
+        <div class=" intro-section-links">
+
+            <div class="mg  bdl intro-section-links-divs "><i class="bi bi-book-fill mg  htc1"></i><a href=""
+                    class="kanit-light mg">Mandatory Public Disclosure</a></div>
+            <div class="line mg bg1"></div>
+            <div class="mg bdl intro-section-links-divs"><i class="bi bi-calendar-fill mg  htc1"></i><a href=""
+                    class="kanit-light mg">
+                    ANNUAL EXAMINATION Timetable</a></div>
+            <div class="line mg bg1"></div>
+            <div class="mg bdl intro-section-links-divs"><i class="bi bi-file-earmark-pdf-fill mg  htc1"></i><a href=""
+                    class="kanit-light mg">SCHOOL CIRCULARS</a></div>
+            <div class="line mg bg1"></div>
+            <div class="mg bdl intro-section-links-divs"><i class="bi bi-send-fill mg  htc1"></i><a href=""
+                    class="kanit-light mg">
+                    APPLY FOR A VACANCY</a></div>
+            <div class="line mg bg1"></div>
+            <div class="mg bdl intro-section-links-divs"><i class="bi bi-globe-asia-australia mg htc1"></i><a href=""
+                    class="kanit-light mg">PARENT PORTAL</a></div>
+            <div class="line mg bg1"></div>
+            <div class="mg bdl intro-section-links-divs"><i class="bi bi-phone-fill mg  htc1"></i><a href=""
+                    class="kanit-light mg">DOWNLOAD MOBILE APP</a></div>
+            <div class="line mg bg1"></div>
+
+        </div>
+    </section>
+    <section class="ads-section bdl mg">
+        <div class="ads-section-img"><img
+                src="https://img.freepik.com/premium-photo/cute-asian-student-wearing-graduate-cap-isolated_34435-1832.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                alt=""></div>
+        <div class="ads-section-text">
+            <h1 class="kanit-extrabold tc1 ads-section-text-h mg">Get the most out of your kids education!</h1>
+            <h2 class="kanit-bold-italic tc1 ads-section-text-h mg">Study at School CBSE Bangalore</h2>
+            <button onclick=" " class="ads-section-button mg bg1 tc1 kanit-bold"> Contact us</button>
+        </div>
+    </section>
+    <section class="current-session-admission-banner mg">
+        <img src="https://img.freepik.com/premium-vector/schoolkids-using-her-mobile-phone-front-school-building-illustrationkids-reading-message_723224-4189.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+            alt="" width="45%" class="mg current-session-admission-banner-img-1">
+
+        <img src="https://img.freepik.com/premium-psd/school-admission-background_23-2150357568.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+            alt="" width="45%" class="current-session-admission-banner-img-2 mg">
+    </section>
+    <section class=" event-news  mg">
+        <div class=" event-news-heading ">
+            <h1 class="kanit-light mg tc">LATEST NEWS AND EVENTS
+            </h1>
+        </div>
+        <div class=" event-news-content mg">
+            <div class="event-news-content-pic mg ">
+                <img src="https://img.freepik.com/premium-vector/holi-celebration-background-with-indian-people-characters-enjoying-colorful-costume-festival-elements_1302-41408.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    width="100%" alt="" class="mg ">
+            </div>
+            <div class="event-news-content-news-pic mg ">
+
+                <div class="event-news-content-news-pic-div mg bdl">
+                    <img src="https://img.freepik.com/premium-vector/children-playing-music-park_1639-43972.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                        width="80px" height="80px" class="mg">
+                    <div>
+                        <a class="kanit-extrabold tc mg" href="#"> Capacity Building Programme on Art Integration</a>
+                        <p class="mg kanit-light">School CBSE had the privilege of hosting a one-day Capacity Building
+                            Programme
+                            organized by CBSE on March 10, focusing…</p>
+                    </div>
+                </div>
+                <div class="event-news-content-news-pic-div mg bdl">
+                    <img src="https://img.freepik.com/free-vector/family-celebrating-outdoor-near-carnival_1308-25414.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                        width="80px" height="80px" class="mg">
+                    <div>
+                        <a class="kanit-extrabold tc mg" href="#"> Capacity Building Programme on Art Integration</a>
+                        <p class="kanit-light mg"> School CBSE had the privilege of hosting a one-day Capacity Building
+                            Programme
+                            organized by CBSE on March 10, focusing…</p>
+                    </div>
+                </div>
+                <div class="event-news-content-news-pic-div mg bdl">
+                    <img src="https://img.freepik.com/free-vector/ballerinas-performance-stage-scene_1308-20951.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                        width="80px" height="80px" class="mg">
+                    <div>
+                        <a class="kanit-extrabold tc mg " href="#"> Capacity Building Programme on Art Integration</a>
+                        <p class=" kanit-light mg"> School CBSE had the privilege of hosting a one-day Capacity Building
+                            Programme
+                            organized by CBSE on March 10, focusing…</p>
+                    </div>
+                </div>
+                <div class="event-news-content-news-pic-div  mg bdl">
+                    <img src="https://img.freepik.com/premium-vector/graduation-people-pilot-academy-future-employees-airline-illustration-airplane-icon-mantle-planes-balloons_101903-1532.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                        width="80px" height="80px" class="mg">
+                    <div>
+                        <a class="kanit-extrabold tc mg" href="#"> Capacity Building Programme on Art Integration</a>
+                        <p class=" kanit-light mg"> School CBSE had the privilege of hosting a one-day Capacity Building
+                            Programme
+                            organized by CBSE on March 10, focusing…</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="facilities-overview mg ">
+        <div class="facilities-overview-with-pic mg ">
+            <a href="" class="facilities-overview-with-pic-content mg ">
+                <img src="https://img.freepik.com/free-vector/teacher-talking-with-her-students-white-background_1308-69937.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    alt="" class="bld mg facilities-overview-with-pic-content-img  ">
+                <p class="bld facilities-overview-with-pic-content-p  mg tc1 bg1 kanit-bold">
+                    Where Excellence Meets Education!
+                </p>
+            </a>
+            <a href="" class="facilities-overview-with-pic-content mg  ">
+                <img src="https://img.freepik.com/free-vector/students-with-computer-classroom-elements-white-background_1308-52052.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    alt="" class="bld mg facilities-overview-with-pic-content-img">
+                <p class=" mg bld facilities-overview-with-pic-content-p tc1 bg1 kanit-bold">
+                    Where Excellence Meets Education!
+                </p>
+            </a>
+            <a href="" class="facilities-overview-with-pic-content mg  ">
+                <img src="https://img.freepik.com/free-vector/gradient-international-day-education-illustration_23-2150011975.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    class="bld facilities-overview-with-pic-content-img mg" alt="">
+                <p class="bld facilities-overview-with-pic-content-p tc1 bg1 kanit-bold mg">
+                    Where Excellence Meets Education!
+                </p>
+            </a>
+
+        </div>
+        <div class="facilities-overview-with-count">
+            <div class="facilities-overview-with-count-div">
+                <h1 class="kanit-bold tc mg facilities-overview-with-count-div-h1 ">2,100+</h1>
+                <h6 class="kanit-medium mg tc1 facilities-overview-with-count-div-h6 "> Students</h6>
+                <p class="kanit-light mg facilities-overview-with-count-div-p ">Receive the best education in the country</p>
+            </div>
+
+            <div class="facilities-overview-with-count-div">
+                <h1 class="kanit-bold tc mg facilities-overview-with-count-div-h1 ">70+</h1>
+                <h6 class="kanit-medium mg tc1 facilities-overview-with-count-div-h6 "> Teachers</h6>
+                <p class="kanit-light mg facilities-overview-with-count-div-p ">Facilitate learning with great passion</p>
+            </div>
+
+            <div class="facilities-overview-with-count-div">
+                <h1 class="kanit-bold tc mg facilities-overview-with-count-div-h1 ">100%</h1>
+                <h6 class="kanit-medium mg tc1 facilities-overview-with-count-div-h6 "> Satisfaction</h6>
+                <p class="kanit-light mg facilities-overview-with-count-div-p ">For parents who make the wise choice</p>
+            </div>
+        </div>
+    </section>
+    <section class=" mg school-staff">
+        <div class=" mg school-staff-principal bdl">
+            <div class="mg school-staff-principal-image">
+                <img
+                    src="https://img.freepik.com/free-vector/teachers-character-school-classroom_24908-56531.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    class=" mg img-fluid rounded-top"
+                    alt="" height="100%" width="100%"
+                />
+                <p class=" mg bld school-staff-principal-image-name kanit-light  tc1 bg1 ">
+                   <span class="mg"> Fr. Dr. Johnson Kadaparambil CMI</span>
+                </p>
+
+            </div>
+            <div class="school-staff-principal-content mg ">
+                <p class="kanit-medium mg tc">Principal's Welcome</p>
+                <h1 class="kanit-bold mg tc">A HEARTY WELCOME TO  SCHOOL</h1>
+                <p class="kanit-light mg ">A hearty welcome to Christ School, an abode of wisdom, erudition and enlightenment! We are proud members of this great family of Chavara. 
+
+                    We are here to enlighten this part of our motherland after the example of our Divine Guru, Jesus Christ and his dear disciple St. Chavara…</p>
+                <a href="#" class="kanit-semibold mg">Read More...</a>
+
+            </div>
+        </div>
+
+
+        <div class=" mg school-staff-principal bdl">
+            <div class="mg school-staff-principal-image">
+                <img
+                    src="https://img.freepik.com/premium-vector/happy-teacher-s-day-indian-young-female-teacher-with-children-students_138260-1650.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740"
+                    class=" mg img-fluid rounded-top"
+                    alt="" height="100%" width="100%"
+                />
+                <p class=" mg bld school-staff-principal-image-name kanit-light  tc1 bg1">
+                    Fr. Reji Koodappattu CMI
+                </p>
+
+            </div>
+            <div class="school-staff-principal-content mg ">
+                <p class="kanit-medium mg tc">Vice Principal's Message</p>
+                <h1 class="kanit-bold mg tc">REACH EXCELLENCE WITH US</h1>
+                <p class="kanit-light mg ">Group of Schools, had its humble beginning in the year 1984, with  State Board Syllabus. Over the period of years, it has grown steadily and expanded its wings far and wide, with thousands of Alumni, imprinting their footprints in various walks of civil and public life….</p>
+                <a href="#" class="kanit-semibold mg">Read More...</a>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="parents-students-reviews mg ">
+        <div class=" parents-students-reviews-heading mg "><h1 class="kanit-light  mg tc">Parent and Student Reviews</h1></div>
+        <!-- div body for horizontal scrolling -->
+        <div class="parents-students-reviews-body mg ">
+            <!-- element inside it  -->
+        <div class="parents-students-reviews-containers mg bdl">
+            <div  class="  parents-students-reviews-containers-logo mg ">
+            <img src="https://img.freepik.com/premium-vector/happy-young-man-holding-tablet-pc-flat-vector-illustration_906149-82931.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740" 
+            alt="" 
+            class=" bdl parents-students-reviews-containers-logo-img mg " 
+            height="120px" width="120px">
+            </div>
+            <p class=" kanit-light mg bld parents-students-reviews-containers-reviews ">hrist School, my experience has been overwhelmingly positive. The school provides a strong academic environment that challenges students while offering ample support. The focus on character development, leadership, and community involvement is evident in the growth I’ve seen in my child. The faculty and staff are dedicated and approachable, fostering a close-knit, nurturing atmosphere. Additionally, the school’s commitment to a balanced education, including athletics and extracurriculars, has allowed my child to thrive both in and out of the classroom.
+
+                Mr. Rinto Anto
+                Parent
+                My wife and I, being alumni of Christ School, had no second thoughts about choosing Christ School for our daughters’ education. Our experience at Christ has been nothing short of transformative, and we witness this transformation in various ways, with children soaring high like eagles. The management’s expertise and contributions to the field of education since 1983 have been highly commendable. The teachers not only educate but also inspire. The diverse and engaging curriculum encourages exploration and growth, making every day at Christ filled with opportunities to learn and succeed. The emphasis on both academic excellence and personal development has truly prepared our children for future challenges. The school’s commitment to academic excellence, combined with its focus on creativity, critical thinking, and a strong sense of community, has truly enriched our children’s education. They are not only receiving a top-notch education but also creating unforgettable, lifelong memories.
+                
+                
+                Mr. Joby John
+                Parent
+                I love going to Christ School CBSE every day! My teachers are very kind and help me learn new things in a fun way. I enjoy reading stories and playing with my friends during break time. The activities we do in class are exciting, and I feel happy when I learn something new. Christ School CBSE is a wonderful place where I feel safe and cared for. I am glad to be a part of this school!
+                
+                </p>
+                
+                <span class="mg  parents-students-reviews-containers-rating tc1"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                <h1 class="mg  parents-students-reviews-containers-name kanit-extrabold tc">Bhaskar Joshi</h1>
+                <h6 class="mg  parents-students-reviews-containers-role kanit-semibold tc1">Student </h6>
+            </div>
+
+
+<!-- e2 -->
+<div class="parents-students-reviews-containers mg bdl">
+    <div  class="  parents-students-reviews-containers-logo mg ">
+    <img src="https://img.freepik.com/premium-vector/happy-young-man-holding-tablet-pc-flat-vector-illustration_906149-82931.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740" 
+    alt="" 
+    class=" bdl parents-students-reviews-containers-logo-img mg " 
+    height="120px" width="120px">
+    </div>
+    <p class=" kanit-light mg bld parents-students-reviews-containers-reviews ">hrist School, my experience has been overwhelmingly positive. The school provides a strong academic environment that challenges students while offering ample support. The focus on character development, leadership, and community involvement is evident in the growth I’ve seen in my child. The faculty and staff are dedicated and approachable, fostering a close-knit, nurturing atmosphere. Additionally, the school’s commitment to a balanced education, including athletics and extracurriculars, has allowed my child to thrive both in and out of the classroom.
+
+        Mr. Rinto Anto
+        Parent
+        My wife and I, being alumni of Christ School, had no second thoughts about choosing Christ School for our daughters’ education. Our experience at Christ has been nothing short of transformative, and we witness this transformation in various ways, with children soaring high like eagles. The management’s expertise and contributions to the field of education since 1983 have been highly commendable. The teachers not only educate but also inspire. The diverse and engaging curriculum encourages exploration and growth, making every day at Christ filled with opportunities to learn and succeed. The emphasis on both academic excellence and personal development has truly prepared our children for future challenges. The school’s commitment to academic excellence, combined with its focus on creativity, critical thinking, and a strong sense of community, has truly enriched our children’s education. They are not only receiving a top-notch education but also creating unforgettable, lifelong memories.
+        
+        
+        Mr. Joby John
+        Parent
+        I love going to Christ School CBSE every day! My teachers are very kind and help me learn new things in a fun way. I enjoy reading stories and playing with my friends during break time. The activities we do in class are exciting, and I feel happy when I learn something new. Christ School CBSE is a wonderful place where I feel safe and cared for. I am glad to be a part of this school!
+        
+        </p>
+        
+        <span class="mg  parents-students-reviews-containers-rating tc1"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <h1 class="mg  parents-students-reviews-containers-name kanit-extrabold tc">Bhaskar Joshi</h1>
+        <h6 class="mg  parents-students-reviews-containers-role kanit-semibold tc1">Student </h6>
+    </div>
+
+
+
+<!-- e2 -->
+<div class="parents-students-reviews-containers mg bdl">
+    <div  class="  parents-students-reviews-containers-logo mg ">
+    <img src="https://img.freepik.com/premium-vector/happy-young-man-holding-tablet-pc-flat-vector-illustration_906149-82931.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740" 
+    alt="" 
+    class=" bdl parents-students-reviews-containers-logo-img mg " 
+    height="120px" width="120px">
+    </div>
+    <p class=" kanit-light mg bld parents-students-reviews-containers-reviews ">hrist School, my experience has been overwhelmingly positive. The school provides a strong academic environment that challenges students while offering ample support. The focus on character development, leadership, and community involvement is evident in the growth I’ve seen in my child. The faculty and staff are dedicated and approachable, fostering a close-knit, nurturing atmosphere. Additionally, the school’s commitment to a balanced education, including athletics and extracurriculars, has allowed my child to thrive both in and out of the classroom.
+
+        Mr. Rinto Anto
+        Parent
+        My wife and I, being alumni of Christ School, had no second thoughts about choosing Christ School for our daughters’ education. Our experience at Christ has been nothing short of transformative, and we witness this transformation in various ways, with children soaring high like eagles. The management’s expertise and contributions to the field of education since 1983 have been highly commendable. The teachers not only educate but also inspire. The diverse and engaging curriculum encourages exploration and growth, making every day at Christ filled with opportunities to learn and succeed. The emphasis on both academic excellence and personal development has truly prepared our children for future challenges. The school’s commitment to academic excellence, combined with its focus on creativity, critical thinking, and a strong sense of community, has truly enriched our children’s education. They are not only receiving a top-notch education but also creating unforgettable, lifelong memories.
+        
+        
+        Mr. Joby John
+        Parent
+        I love going to Christ School CBSE every day! My teachers are very kind and help me learn new things in a fun way. I enjoy reading stories and playing with my friends during break time. The activities we do in class are exciting, and I feel happy when I learn something new. Christ School CBSE is a wonderful place where I feel safe and cared for. I am glad to be a part of this school!
+        
+        </p>
+        
+        <span class="mg  parents-students-reviews-containers-rating tc1"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <h1 class="mg  parents-students-reviews-containers-name kanit-extrabold tc">Bhaskar Joshi</h1>
+        <h6 class="mg  parents-students-reviews-containers-role kanit-semibold tc1">Student </h6>
+    </div>
+
+    
+<!-- e2 -->
+<div class="parents-students-reviews-containers mg bdl">
+    <div  class="  parents-students-reviews-containers-logo mg ">
+    <img src="https://img.freepik.com/premium-vector/happy-young-man-holding-tablet-pc-flat-vector-illustration_906149-82931.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740" 
+    alt="" 
+    class=" bdl parents-students-reviews-containers-logo-img mg " 
+    height="120px" width="120px">
+    </div>
+    <p class=" kanit-light mg bld parents-students-reviews-containers-reviews ">hrist School, my experience has been overwhelmingly positive. The school provides a strong academic environment that challenges students while offering ample support. The focus on character development, leadership, and community involvement is evident in the growth I’ve seen in my child. The faculty and staff are dedicated and approachable, fostering a close-knit, nurturing atmosphere. Additionally, the school’s commitment to a balanced education, including athletics and extracurriculars, has allowed my child to thrive both in and out of the classroom.
+
+        Mr. Rinto Anto
+        Parent
+        My wife and I, being alumni of Christ School, had no second thoughts about choosing Christ School for our daughters’ education. Our experience at Christ has been nothing short of transformative, and we witness this transformation in various ways, with children soaring high like eagles. The management’s expertise and contributions to the field of education since 1983 have been highly commendable. The teachers not only educate but also inspire. The diverse and engaging curriculum encourages exploration and growth, making every day at Christ filled with opportunities to learn and succeed. The emphasis on both academic excellence and personal development has truly prepared our children for future challenges. The school’s commitment to academic excellence, combined with its focus on creativity, critical thinking, and a strong sense of community, has truly enriched our children’s education. They are not only receiving a top-notch education but also creating unforgettable, lifelong memories.
+        
+        
+        Mr. Joby John
+        Parent
+        I love going to Christ School CBSE every day! My teachers are very kind and help me learn new things in a fun way. I enjoy reading stories and playing with my friends during break time. The activities we do in class are exciting, and I feel happy when I learn something new. Christ School CBSE is a wonderful place where I feel safe and cared for. I am glad to be a part of this school!
+        
+        </p>
+        
+        <span class="mg  parents-students-reviews-containers-rating tc1"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <h1 class="mg  parents-students-reviews-containers-name kanit-extrabold tc">Bhaskar Joshi</h1>
+        <h6 class="mg  parents-students-reviews-containers-role kanit-semibold tc1">Student </h6>
+    </div>
+
+    
+<!-- e2 -->
+<div class="parents-students-reviews-containers mg bdl">
+    <div  class="  parents-students-reviews-containers-logo mg ">
+    <img src="https://img.freepik.com/premium-vector/happy-young-man-holding-tablet-pc-flat-vector-illustration_906149-82931.jpg?ga=GA1.1.1272954277.1744944868&semt=ais_hybrid&w=740" 
+    alt="" 
+    class=" bdl parents-students-reviews-containers-logo-img mg " 
+    height="120px" width="120px">
+    </div>
+    <p class=" kanit-light mg bld parents-students-reviews-containers-reviews ">hrist School, my experience has been overwhelmingly positive. The school provides a strong academic environment that challenges students while offering ample support. The focus on character development, leadership, and community involvement is evident in the growth I’ve seen in my child. The faculty and staff are dedicated and approachable, fostering a close-knit, nurturing atmosphere. Additionally, the school’s commitment to a balanced education, including athletics and extracurriculars, has allowed my child to thrive both in and out of the classroom.
+
+        Mr. Rinto Anto
+        Parent
+        My wife and I, being alumni of Christ School, had no second thoughts about choosing Christ School for our daughters’ education. Our experience at Christ has been nothing short of transformative, and we witness this transformation in various ways, with children soaring high like eagles. The management’s expertise and contributions to the field of education since 1983 have been highly commendable. The teachers not only educate but also inspire. The diverse and engaging curriculum encourages exploration and growth, making every day at Christ filled with opportunities to learn and succeed. The emphasis on both academic excellence and personal development has truly prepared our children for future challenges. The school’s commitment to academic excellence, combined with its focus on creativity, critical thinking, and a strong sense of community, has truly enriched our children’s education. They are not only receiving a top-notch education but also creating unforgettable, lifelong memories.
+        
+        
+        Mr. Joby John
+        Parent
+        I love going to Christ School CBSE every day! My teachers are very kind and help me learn new things in a fun way. I enjoy reading stories and playing with my friends during break time. The activities we do in class are exciting, and I feel happy when I learn something new. Christ School CBSE is a wonderful place where I feel safe and cared for. I am glad to be a part of this school!
+        
+        </p>
+        
+        <span class="mg  parents-students-reviews-containers-rating tc1"> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <h1 class="mg  parents-students-reviews-containers-name kanit-extrabold tc">Bhaskar Joshi</h1>
+        <h6 class="mg  parents-students-reviews-containers-role kanit-semibold tc1">Student </h6>
+    </div>
+
+
+
+            </div>
+    </section>
+
+
+
+
+    <footer class="footer bg1 mg ">
+        <div class="footer__top mg  ">
+            <div class=" footer__top_div mg  ">
+                <h1 class="mg   kanit-extrabold">Connect With Us</h1>
+                <a class=" mg  kanit-medium"><i class="bi bi-telephone-fill tcw"></i>  6789123456</a>
+                <a class=" mg  kanit-medium"><i class="bi bi-envelope-fill tcw"></i>  info@-school.com</a>
+                <a class=" mg  kanit-medium tcw" href="#" ><i class="bi bi-globe-asia-australia tcw"></i>  https://www.christ-school.com</a>
+            </div>
+            <div class=" footer__top_div mg ">
+                <h1 class="mg   kanit-extrabold">Office  Hours               </h1>
+                <a class="kanit-semibold mg ">Monday to Friday</a>
+<a class="kanit-light mg  ">8.00 am - 4.00 pm</a>
+<a class="kanit-semibold mg ">Saturday</a>
+<a class="kanit-light mg  ">8.00 am - 1.00 pm</a>
+<a class="kanit-semibold mg ">Fees Collection</a>
+<a class="kanit-light mg  ">8.30 am - 12.45 pm</a>
+
+            </div>
+            <div class=" footer__top_div mg ">
+                <h1 class="mg   kanit-extrabold"> Quick Links</h1>
+                <a class="kanit-light mg  tcw" href="#"><i class="bi bi-caret-right-fill tcw"></i>  Our School</a>
+                    <a class="kanit-light mg  tcw " href="#"><i class="bi bi-caret-right-fill tcw"></i>  Management</a>
+                        <a class="kanit-light mg  tcw" href="#"><i class="bi bi-caret-right-fill tcw"></i>  Admission</a>
+                            <a class="kanit-light mg  tcw" href="#"><i class="bi bi-caret-right-fill tcw"></i>  Examination Timetable</a>
+                                <a class="kanit-light mg  tcw" href="#" ><i class="bi bi-caret-right-fill tcw"></i>  Newsletter</a>
+
+            </div>
+            <div class=" footer__top_div w-25 mg ">
+                <h1 class="mg   kanit-extrabold"> Get  In Touch</h1>
+                <a class="kanit-medium mg  ">CHRIST SCHOOL</a>
+<address class="mg  kanit-light"> School Road
+Dharmaram College Post
+Bengaluru, Pin: 560029
+Karnataka , India</address>
+            </div>
+        </div>
+        <div class="footer__bottom mg ">
+            
+                <p class="mg  kanit-medium"> Copyright @ <span id="current_year">2021</span> Our School. <a href="" class=" tc1">Developed By Vhbuyio</a> </p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

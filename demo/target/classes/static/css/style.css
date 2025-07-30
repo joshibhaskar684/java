@@ -1,0 +1,936 @@
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .pd{
+    padding: 10px;
+  }
+  .mg{
+    margin: 10px;
+  }
+  .tc{
+    color: rgb(7, 0, 104);
+  }
+  .tc1{
+    color: skyblue;
+  }
+  .bg1{
+    background-color:  rgb(7, 0, 104);
+  }
+  .bg2{
+    background-color: skyblue;
+  }
+  .bgb{
+    background-color: rgba(135, 207, 235, 0.662);
+    border-radius: 5px;
+  }
+  .htc:hover{
+    color:skyblue;
+  }
+  .htc1{
+    color: skyblue;
+  }
+  .htc1:hover{
+    color:  rgb(7, 0, 104);
+  }
+  .hbg:hover{
+    background-color: skyblue;
+  }
+  .bhbg:hover{
+    background-color: rgb(7, 0, 104);
+    color:skyblue;
+  }
+  a{
+    text-decoration: none;
+  }
+  .bd{
+    border:2px solid black;
+  }
+  .bdl{
+    border: 1px solid skyblue;
+  }
+  .hbgl:hover{
+    background-color: rgba(135, 207, 235, 0.772);
+  }
+  /* other classses for changing color and etc in page nav/header */
+.tcw{
+  color: white;
+}
+.w-25{
+  width:25%;
+}
+
+
+
+  /* header starts */
+  .header{
+display: flex;
+top:0;
+align-items: centre;
+justify-content: center;
+width:100%;
+height:50px;
+  }
+  .inside-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:10px;
+    border-bottom: 1px solid #010165;
+  }
+  /* .inside-header a:hover{
+    color: blue;
+    color: skyblue;
+  } */
+  .media-icon{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .media-icon a:hover{
+    color: skyblue;
+  }
+  /* header ends */
+
+
+
+
+
+
+
+
+
+  /* navbar starts  */
+
+
+
+  .Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height: 90px;
+    border-bottom: 2px solid navy;
+  }
+  .nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height: 100%;
+  }
+  
+  .nav-desktop-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:80%;
+    height:100%;
+  }
+  .dropdown{
+    position: relative;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+  .dropdown:hover .dropdown-item{
+    display: flex;
+  }
+  .dropdown-summary{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition:all 0.3s ease;
+  }
+  .dropdown-summary:hover{
+    
+    background-color: rgba(135, 207, 235, 0.662);
+    border-radius: 5px;
+  }
+  .dropdown-summary-b{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition:all 0.5s ease;
+  }
+  .dropdown-item{
+    top:100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 20px rgb(76, 75, 75);
+    width:350%;
+    z-index: 1;
+    left:0;
+  }
+  .dropdown-item a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width:100%;
+    height:40px;
+  }
+  .toogle-button{
+    display: none;
+    transition: all ease-in-out 0.5s;
+  }
+  .nav-mobile-links{
+    display: none;
+  }
+  .hbgbd:hover{
+    cursor: pointer;
+    background-color: rgb(7, 0, 104);
+    color:skyblue;}
+
+
+
+
+
+
+
+
+
+
+    /* navbar finish  */
+
+
+
+
+
+/* hero section */
+
+.hero-section{
+  height:80vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moving-news-section{
+  display: flex;
+  align-items: center;
+  height:70px;
+}
+
+.moving-news-section-latest-news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:15%;
+ font-size: 20px;
+  height: 100%;
+}
+
+.scroll-item{
+ margin-left: 50px;
+  font-size: larger;
+}
+
+/* intro section */
+.intro-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 90px;
+ 
+}
+.intro-section-intro{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-section-intro h1{
+  font-size: 40px;
+}
+.intro-section-intro,
+.intro-section-vedio-intro,
+.intro-section-links
+{
+  width:25%;
+
+}
+.intro-section-vedio-intro{
+  
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro-section-links-divs{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow:  0px 12px 8px navy;
+}
+.intro-section-links{
+  overflow: hidden;
+}
+.line{
+  width:100%;
+  height: 1px;
+  background-color: #ffffff00;
+}
+/* ads section */
+
+.ads-section{
+  display: flex;
+  align-items: center;
+  background: linear-gradient( 90deg,navy, skyblue,navy,blue,purple);
+  margin-top: 90px;
+}
+.ads-section-text-h{
+  font-size: 40px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.ads-section-button{
+  cursor: pointer;
+  font-size: 30px;
+  height: 70px;
+  width:200px;
+  box-shadow:  0px 12px 8px skyblue;
+}
+.current-session-admission-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+ 
+}
+/* latest news and events  */
+
+.event-news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 80px;
+}
+.event-news-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.event-news-content-pic{
+  width:40%;
+}
+.event-news-content-news-pic{
+  width:50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.event-news-content-news-pic-div{
+  display: flex;
+  align-items: center;
+  
+}
+.event-news-content-news-pic-div div a{
+  display: flex;
+ justify-content: start;
+}
+.facilities-overview{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  margin-top: 100px;
+}
+.facilities-overview-with-pic{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+background: linear-gradient( 90deg,navy, skyblue,navy);
+border-bottom: 10px solid rgb(0, 136, 255);
+}
+.facilities-overview-with-pic-content{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:30%;
+ 
+}
+.facilities-overview-with-pic-content-img{
+width:90%;
+height:450px;
+
+
+}
+.facilities-overview-with-pic-content-p
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width:90%;
+}
+.facilities-overview-with-count
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.facilities-overview-with-count-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.facilities-overview-with-count-div-h1{
+  font-size:60px;
+  margin-bottom: 0;
+}
+.facilities-overview-with-count-div-h6{
+  font-size: 30px;
+  margin-top: 0;
+}
+.facilities-overview-with-count-div-p{
+  font-size: large;
+}
+.school-staff{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ background:linear-gradient(45deg,skyblue,white,skyblue);
+ margin-top: 80px;
+}
+.school-staff-principal{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.school-staff-principal-image-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width:100%;
+}
+/* .parents-students-reviews{
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:99%;
+  
+}
+.parents-students-reviews-containers{
+  width:100%;
+background:linear-gradient(90deg,rgba(255, 255, 255, 0.411),white,rgba(213, 135, 235, 0.368),rgba(128, 0, 128, 0.427),rgba(0, 0, 255, 0.434),rgba(135, 207, 235, 0.297));
+}
+.parents-students-reviews-containers-logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: right;
+  height:100px;
+  margin-top: 0px;
+}
+.parents-students-reviews-containers-logo-img{
+  border-radius: 50%;
+  position: absolute;
+  top:-50%;
+}
+.parents-students-reviews-containers-reviews{
+ text-align: justify;
+}
+.parents-students-reviews-containers-name{
+  font-size: xx-large;
+}
+.parents-students-reviews-containers-role{
+  font-size: large;
+}
+.parents-students-reviews-containers-rating{
+  font-size: 30px;
+  gap:20px;
+}
+.parents-students-reviews-body{
+  display: flex;
+  overflow-x: auto;
+  
+} */
+
+
+
+.parents-students-reviews {
+  margin:0 auto;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  width: 90%;
+}
+
+/* Scrollable row of cards */
+.parents-students-reviews-body {
+  display: flex;
+  overflow-x: auto;
+  gap: 120px;
+  padding: 20px;
+  
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 90%;
+}
+
+/* Each review card */
+.parents-students-reviews-containers {
+  flex: 0 0 auto; /* Don't shrink, keep fixed width */
+  width: 70%; /* or 320px, as needed */
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.411),
+    rgba(255, 255, 255, 0.416),
+    rgba(253, 254, 255, 0.368),
+    rgba(255, 255, 255, 0.427),
+    rgba(255, 255, 255, 0.434),
+    rgba(255, 255, 255, 0.297)
+  );
+  margin-left: 70px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-left: 60px;
+  scroll-snap-align: start;
+}
+
+/* Image container */
+.parents-students-reviews-containers-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  height: 100px;
+  margin-top: 0;
+}
+
+/* Floating circular image */
+.parents-students-reviews-containers-logo-img {
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  right: 0;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+/* Text content styles */
+.parents-students-reviews-containers-reviews {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 70px; /* Add spacing below floating image */
+}
+
+.parents-students-reviews-containers-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-align: start;
+}
+
+.parents-students-reviews-containers-role {
+  font-size: 1rem;
+  text-align: start;
+  color: #555;
+}
+
+.parents-students-reviews-containers-rating {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  color: gold;
+}
+
+
+.footer{
+margin-top: 100px;
+  color: rgb(255, 255, 255);
+}
+.footer__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__top_div{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  height: 412px;
+}
+.footer__bottom{
+  border-top: 2px solid white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+  /* media qure for mobile phone */
+  @media (max-width: 1100px) {
+    .header{
+        display: none;
+    }
+
+
+
+    /* navbar for mobile starts  */
+    .nav-desktop-links{
+        display: none;
+    }
+    .toogle-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.5s;
+        
+        }
+        .nav-mobile-links{
+            top:0;
+            height:100%;
+            width:100%;
+            display: none;
+            position: fixed;
+            z-index: 2;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            background-color: white;
+           
+
+        }
+        .toogle-close{
+          display: flex;
+          align-items: end;
+          justify-content: end;
+          padding: 20px;
+          width:100%;
+          
+        }
+        .toogle-close a{
+          font-size: 30px;
+          font-weight: 1000;
+          padding-right: 20px;
+          cursor: pointer;
+        
+        }
+        .m-dropdown{
+          margin-left: 20px;
+          width:100%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            padding: 10px;
+        }
+        .m-dropdown-summary{
+          width:100%;
+          cursor: pointer;
+        }
+        .m-dropdown-item{
+            width:200%;
+            top:100%;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .m-dropdown-item a{
+          width:100%;
+          padding: 10px;
+           
+        }
+        .m-dropdown-summary-b{
+          padding: 10px;
+          transition: all ease-in-out 0.5s;
+          cursor: pointer;
+        }
+ /* navbar for mobile ends  */
+
+/* hero section starts */
+.hero-section{
+  height:30vh;
+  width: 100%;
+}
+.hero-section img{
+  width: 100%;
+}
+
+
+.moving-news-section{
+  display: flex;
+  align-items: center;
+  height:35px;
+}
+
+
+.moving-news-section-latest-news{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:35%;
+ font-size: small;
+  height: 100%;
+}
+.scroll-item{
+  margin-left: 50px;
+   font-size: smaller;
+ }
+
+ .intro-section{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-section-intro,
+.intro-section-vedio-intro,
+.intro-section-links
+{
+  width:100%;
+}
+.ads-section img{
+  display: none;
+}
+.ads-section{
+  display: flex;
+  align-items: center;
+}
+.current-session-admission-banner-img-1{
+  display: none;
+
+}
+.current-session-admission-banner-img-2{
+  width:100%;
+}
+
+.event-news-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.event-news-content-pic{
+  width:100%;
+}
+.event-news-content-news-pic{
+  width:100%;
+}
+
+.facilities-overview-with-pic{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  background: linear-gradient( 90deg,navy, skyblue,navy);
+  }
+  .facilities-overview-with-pic-content{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    
+  }
+.facilities-overview-with-count{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.school-staff{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background:linear-gradient(45deg,skyblue,white,skyblue);
+  flex-direction: column;
+  
+ }
+ .school-staff-principal{
+  
+  flex-direction: column;
+ }
+ .parents-students-reviews-containers {
+  width: 350px;
+  padding-left: 20px;
+}
+
+
+.parents-students-reviews-containers-reviews {
+  font-size: 13px;
+}
+
+.footer__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.footer__top_div{
+  width:100%;
+
+}
+.w-25{
+  width: 100%;
+}
+.footer__top_div{
+  height:auto;
+}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
