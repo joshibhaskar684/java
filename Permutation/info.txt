@@ -1,0 +1,3 @@
+this is permutation problems it means finding all possible sequence
+like a="abc";
+[abc,bac,bca,...........]
